@@ -1,17 +1,16 @@
-
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    transition: opacity 0.8s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
- }
+}
 
- #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
- }
+#spinner.show {
+    transition: opacity 0.8s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
 /*** Spinner End ***/
 
 .back-to-top {
@@ -30,7 +29,7 @@
 /*** Button Start ***/
 .btn {
     font-weight: 600;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .btn-square {
@@ -97,10 +96,9 @@
 .display-4,
 .display-5,
 .display-6 {
-    font-family: 'Great Vibes', cursive;
+    font-family: "Kaushan Script", cursive;
     font-weight: 700;
 }
-
 
 /*** Navbar Start ***/
 .sticky-top {
@@ -108,13 +106,12 @@
     background: var(--bs-white);
 }
 
-
 .navbar .navbar-nav .nav-link {
     padding: 10px 15px;
-    font-family: 'Petit Formal Script', cursive;
+    font-family: "Petit Formal Script", cursive;
     font-weight: 600;
     font-size: 16px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -134,8 +131,7 @@
 /*** Carousel Start ***/
 .carousel-item {
     position: relative;
-    min-height: 100vh
-    
+    min-height: 100vh;
 }
 
 .carousel-item img {
@@ -155,7 +151,7 @@
     align-items: center;
     justify-content: end;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     background-size: cover;
 }
 
@@ -189,7 +185,6 @@
     border-left: 15px solid var(--bs-primary);
 }
 /*** Carousel End ***/
-
 
 /*** Wedding Story Start ***/
 .story .story-timeline,
@@ -230,7 +225,7 @@
 @media (max-width: 768px) {
     .story .story-timeline::before,
     .story .story-timeline::after,
-    .story .story-timeline .row::after  {
+    .story .story-timeline .row::after {
         display: none;
     }
 }
@@ -241,7 +236,11 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/wedding-date-bg.jpg) center;
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        url(../img/wedding-date-bg.jpg) center;
     object-fit: cover;
     background-repeat: no-repeat;
 }
@@ -263,7 +262,6 @@
 }
 /*** Wedding Date End ***/
 
-
 /*** Wedding Timeline Start ***/
 @media (max-width: 576px) {
     .wedding-timeline .wedding-content .heart-circle {
@@ -271,7 +269,6 @@
     }
 }
 /*** Wedding Timeline End ***/
-
 
 /*** Gallery Start ***/
 .gallery .gallery-img {
@@ -321,14 +318,12 @@
     transition: 0.5s;
     opacity: 0;
     z-index: 2;
-    
 }
 
 .gallery .gallery-img:hover .search-icon {
     opacity: 1;
 }
 /*** Gallery End ***/
-
 
 /*** team Start ***/
 .team .team-item {
@@ -350,7 +345,7 @@
 }
 
 .team .team-item:hover .team-content {
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .team .team-item .team-content {
@@ -395,7 +390,6 @@
 }
 /*** Team End ***/
 
-
 /*** Contact Us Start ***/
 .RSVP-form {
     background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2));
@@ -403,10 +397,10 @@
 }
 /*** Contact Us End ***/
 
-
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/footer-bg.jpg) center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../img/footer-bg.jpg) center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -432,7 +426,6 @@
     }
 }
 /*** Footer End ***/
-
 
 /*** copyright Start ***/
 .copyright {

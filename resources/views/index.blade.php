@@ -11,9 +11,11 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {{--
     <link
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;500;600&family=Petit+Formal+Script&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> --}}
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
@@ -29,6 +31,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/css/audio-play.css') }}">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navBar" id="weddingHome">
@@ -136,7 +139,7 @@
         </div> --}}
         <div class="container position-relative py-5">
             <div class="mx-auto text-center mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800;">
-                <h1 class="text-primary display-1">Pasangan Mempelai</h1>
+                <h3 class="text-primary display-3">Pasangan Mempelai</h3>
                 <h4 class="text-dark mb-0">Assalamu'alaikum Wr. Wb. Dengan Memanjatkan Puji Dan Syukur Ke Hadirat Allah
                     SWT, Serta Dengan Memohon Ridho-Nya Kami
                     Bermaksud Mengadakan Acara Pernikahan Kami :</h4>
@@ -294,8 +297,10 @@
                                 <i class="fas fa-menorah text-primary fa-3x"></i>
                             </div>
                             <p class="text-primary">BRI</p>
-                            <h3 class="text-dark">3863 0103 1871 530</h3>
+                            <h3 class="text-dark" id="myInput">3863 0103 1871 530</h3>
                             <p class="text-dark">A/N Sri Maryati</p>
+                            <button class="btn btn-primary btn-primary-outline-0 py-3 px-5"
+                                onclick="copyToClipboard()">Salin Nomor</button>
                         </div>
                     </div>
                 </div>
@@ -356,11 +361,14 @@
     </div>
     <!-- Copyright End -->
 
-
+    <div class="audio-controls">
+        <button class="btn btn-primary toggle-btn" id="play-button">&#9658;</button>
+        <audio id="myAudio" src="{{ asset('assets/audio/videoplayback.m4a') }}" type="audio/mp4" preload="auto"></audio>
+    </div>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
-            class="fa fa-arrow-up"></i></a>
+    {{-- <button class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
+            class="fa fa-arrow-up"></i></button> --}}
 
 
     <!-- JavaScript Libraries -->
@@ -375,39 +383,13 @@
     <!-- Template Javascript -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
 
-    <script>
-        // Set the date we're counting down to
-    var countDownDate = new Date("Apr 27, 2024 08:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      // Display the result in the element with id="demo"
-      document.getElementById("days").innerHTML = days;
-      document.getElementById("hours").innerHTML = hours;
-      document.getElementById("minutes").innerHTML = minutes;
-      document.getElementById("seconds").innerHTML = seconds;
-    //   + minutes + "m " + seconds + "s ";
-    
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        // document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="{{ asset('assets/js/copy-to-clipboard.js') }}"></script>
+
+    <script src="{{ asset('assets/js/date-count.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ asset('assets/js/audio-play.js') }}"></script>
 </body>
 
 </html>
