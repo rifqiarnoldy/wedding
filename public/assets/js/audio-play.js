@@ -9,7 +9,7 @@ $(document).ready(function () {
         } else {
             audio.pause();
             audio.currentTime = 0;
-            toggleBtn.html("&#9658;"); // Mengubah ikon menjadi play
+            toggleBtn.html("&#119136;"); // Mengubah ikon menjadi play
         }
     });
 });

@@ -327,13 +327,13 @@
                 <div class="col-lg-4 text-center">
                     <div class="footer-item">
                         <h4 class="mb-4 text-white">Anto<strong class="text-primary">&</strong>Puput</h4>
-                        <p class="text-white">Ucapan terima kasih yang tulus dari kami apabila bapak/ibu/saudara/i
+                        <h5 class="text-white">Ucapan terima kasih yang tulus dari kami apabila bapak/ibu/saudara/i
                             berkenan hadir dan memberi doa restu kepada kedua
                             mempelai
-                        </p>
-                        <p class="text-white">Jazaakumullah Khoiron Katsir
+                        </h5>
+                        <h5 class="text-white">Jazaakumullah Khoiron Katsir
                             Wassalamu'alaikum warahmatullahi Wabarakatuh
-                        </p>
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -365,7 +365,7 @@
     <!-- Copyright End -->
 
     <div class="audio-controls">
-        <button class="btn btn-primary toggle-btn" id="play-button">&#9658;</button>
+        <button class="btn btn-primary toggle-btn items-center" id="play-button">&#119136;</button>
         <audio id="myAudio" src="{{ asset('assets/audio/videoplayback.m4a') }}" type="audio/mp4" preload="auto"></audio>
     </div>
 
