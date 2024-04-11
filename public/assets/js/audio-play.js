@@ -2,6 +2,8 @@ $(document).ready(function () {
     var audio = document.getElementById("myAudio");
     var toggleBtn = $(".toggle-btn");
 
+    toggleBtn.click();
+
     toggleBtn.click(function () {
         if (audio.paused) {
             audio.play();

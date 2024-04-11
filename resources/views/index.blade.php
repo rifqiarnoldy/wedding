@@ -303,7 +303,7 @@
                             <h3 class="text-dark" id="myInput">3863 0103 1871 530</h3>
                             <p class="text-dark">A/N Sri Maryati</p>
                             <button class="btn btn-primary btn-primary-outline-0 py-3 px-5"
-                                onclick="copyToClipboard()">Salin Nomor</button>
+                                onclick="copyToClipboard()">Salin nomor</button>
                         </div>
                     </div>
                 </div>
@@ -366,7 +366,8 @@
 
     <div class="audio-controls">
         <button class="btn btn-primary toggle-btn items-center" id="play-button">&#119136;</button>
-        <audio id="myAudio" src="{{ asset('assets/audio/videoplayback.m4a') }}" type="audio/mp4" preload="auto"></audio>
+        <audio id="myAudio" src="{{ asset('assets/audio/videoplayback.m4a') }}" type="audio/mp4" preload="auto"
+            autoplay></audio>
     </div>
 
     <!-- Back to Top -->
