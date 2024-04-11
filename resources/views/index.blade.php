@@ -156,7 +156,8 @@
                                     <h3 class="text-primary mb-3">Tarwanto</h3>
                                     <p class="text-dark mb-0" style="line-height: 30px;">Putra Ke-8 Dari:
                                     </p>
-                                    <p class="text-dark mb-0" style="line-height: 30px;">Bapak Warji & Ibu Sadiwen
+                                    <p class="text-dark mb-0" style="line-height: 30px;">Bapak Warji (alm) & Ibu Sadiwen
+                                        (alm)
                                     </p>
                                 </div>
                                 {{-- <img src="{{ asset('assets/img/bride.jpg') }}" class="img-fluid img-border" alt="">
@@ -169,8 +170,8 @@
                             </div>
                         </div>
                         <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="d-flex">
-                                <div class="my-auto ps-4">
+                            <div class="d-flex justify-content-start">
+                                <div class="my-auto">
                                     <h3 class="text-primary mb-3">Puput Sri Handayani</h3>
                                     <p class="text-dark mb-0" style="line-height: 30px;">Putri Pertama Dari:
                                     </p>
